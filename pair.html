@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PAIR CODE</title>
+  <title>GOLDEN-FOX PAIR SITE</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <style>
     body {
@@ -147,10 +147,10 @@
           <p>
             <h3 class="centered-text">Link with phone number</h3>
             <br>
-            <h6>🔢 Enter your number with country code.</h6>
+            <h6>💛💙 Enter your number with country code.</h6>
             <div class="input-container">
-              <input placeholder="+94729xxxxxx" type="number" id="number" placeholder="❗ Enter your phone number with country code" name="">
-              <button id="submit">Submit</button>
+              <input placeholder="+947256xxxxxx" type="number" id="number" placeholder="❗ Enter your phone number with country code" name="">
+              <button id="submit">Submit👑</button>
             </div>
             <!-- Add the loading spinner -->
             <div id="loading-spinner">
@@ -178,7 +178,7 @@
       let text = document.getElementById("copy").innerText;
       let obj = document.getElementById("copy");
       await navigator.clipboard.writeText(obj.innerText.replace('CODE: ', ''));
-      obj.innerText = "✔️ COPIED";
+      obj.innerText = "🧡COPIED";
       obj.style = "color:red;font-weight:bold";
       obj.size = "5";
       setTimeout(() => {
@@ -216,7 +216,7 @@
         document.getElementById("loading-spinner").style.display = "block";
         a.innerHTML = ''; // Clear the previous content
         let { data } = await axios(`/code?number=${bc}`);
-        let code = data.code || "❗ Service Unavailable";
+        let code = data.code || "❗ Service Unavailable🥺";
         a.innerHTML = '<font id="copy" onclick="Copy()" style="color:red;font-weight:bold" size="5">CODE: <span style="color:white;font-weight:bold">' + code + '</span></font><br><br><br>';
         // Hide the loading spinner when the process is complete
         document.getElementById("loading-spinner").style.display = "none";
